@@ -15,21 +15,13 @@ using System.Windows.Shapes;
 namespace TP_AIHM
 {
     /// <summary>
-    /// Interaction logic for ElevatorButton.xaml
+    /// Interaction logic for ElevatorView.xaml
     /// </summary>
-    public partial class ElevatorButton : UserControl
+    public partial class ElevatorView : UserControl
     {
-        private String name { get; set; }
-        private String iconPath { get; set; }
-        private String iconPathSelected { get; set; }
-
-        public ElevatorButton()
+        public ElevatorView()
         {
             InitializeComponent();
-        }
-
-        public void init(String name, String iconPath, String iconPathSelected)
-        {
         }
     }
 }
