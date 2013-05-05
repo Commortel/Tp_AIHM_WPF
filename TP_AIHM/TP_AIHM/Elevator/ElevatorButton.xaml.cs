@@ -19,22 +19,22 @@ namespace TP_AIHM
     /// </summary>
     public partial class ElevatorButton : UserControl
     {
-        private String name { get; set; }
-        private String iconPath 
+        public String name { get; set; }
+        public String iconPath 
         {
             set
             {
                 this.ButtonImage.Source = this.CreateImage(value);
             }
         }
-        private String iconPathSelected 
+        public String iconPathSelected 
         {
             set
             {
                 this.ButtonImage.Source = this.CreateImage(value);
             }
         }
-        private ElevetorControl control { get; set; }
+        public ElevetorControl control { get; set; }
 
         public ElevatorButton()
         {
@@ -54,7 +54,7 @@ namespace TP_AIHM
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            this.control.
+            //this.control.
         }
     }
 }

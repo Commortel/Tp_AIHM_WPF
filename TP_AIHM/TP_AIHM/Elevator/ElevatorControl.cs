@@ -11,6 +11,6 @@ namespace TP_AIHM
         private CabinView cabinView;
         private ElevatorView elevatorView;
 
-        private ElevatorAbstract abstraction;
+        //private ElevatorAbstract abstraction;
     }
 }

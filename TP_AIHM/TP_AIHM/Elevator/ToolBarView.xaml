@@ -3,9 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TP_AIHM"
              mc:Ignorable="d" 
              d:DesignHeight="50" d:DesignWidth="800">
     <Grid>
-        <ToolBar Height="50" HorizontalAlignment="Left" Name="toolBar1" VerticalAlignment="Top" Width="800" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="5" />
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <ToolBar HorizontalAlignment="Left" Name="toolBar" Width="800" Grid.ColumnSpan="9" />
+        <local:ElevatorButton Height="50" Grid.Column="1" />
+        <local:ElevatorButton Height="50" Grid.Column="3" />
+        <local:ElevatorButton Height="50" Grid.Column="5" />
+        <local:ElevatorButton Height="50" Grid.Column="7" />
     </Grid>
 </UserControl>

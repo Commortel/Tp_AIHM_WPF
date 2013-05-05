@@ -22,6 +22,15 @@ namespace TP_AIHM
         public CabinView()
         {
             InitializeComponent();
+            this.Initialize();
+        }
+
+        private void Initialize()
+        {
+            this.ZeroButton.iconPath = "images/Zero.png";
+            this.FirstButton.iconPath = "images/One.png";
+            this.SecondButton.iconPath = "images/Two.png";
+            this.ThirdButton.iconPath = "images/Three.png";
         }
     }
 }

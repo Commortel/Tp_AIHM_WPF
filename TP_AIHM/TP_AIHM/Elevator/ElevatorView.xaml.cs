@@ -22,6 +22,15 @@ namespace TP_AIHM
         public ElevatorView()
         {
             InitializeComponent();
+            this.Initialize();
+        }
+
+        private void Initialize()
+        {
+            this.ZeroButton.iconPath = "images/Call.png";
+            this.FirstButton.iconPath = "images/Call.png";
+            this.SecondButton.iconPath = "images/Call.png";
+            this.ThirdButton.iconPath = "images/Call.png";
         }
     }
 }

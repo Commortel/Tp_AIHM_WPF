@@ -8,9 +8,9 @@
             <MenuItem DataContext="{Binding}"  />
         </Menu>
 
-        <local:ToolBarView x:Name="toolView" />
-        <local:CabinView x:Name="cabinView" />
-        <local:ElevatorView x:Name="elevatorView" />
+        <local:ToolBarView x:Name="toolView" Margin="0,29,0,483" />
+        <local:CabinView x:Name="cabinView" Margin="507,76,0,0" />
+        <local:ElevatorView x:Name="elevatorView" Margin="301,76,268,0" />
 
 
     </Grid>
