@@ -23,5 +23,10 @@ namespace TP_AIHM
         {
             InitializeComponent();
         }
+
+        internal void init(ElevatorControl elevatorControl)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
