@@ -15,9 +15,9 @@
             <RowDefinition Height="100" />
             <RowDefinition Height="100*" />
         </Grid.RowDefinitions>
-        <local:ElevatorButton Height="50" Grid.Row="2" x:Name="ThirdButton"/>
-        <local:ElevatorButton Height="50" Grid.Row="3" x:Name="SecondButton"/>
-        <local:ElevatorButton Height="50" Grid.Row="4" x:Name="FirstButton"/>
-        <local:ElevatorButton Height="50" Grid.Row="5" x:Name="ZeroButton"/>   
+        <local:ElevatorButton Height="50" Width="50" Grid.Row="2" x:Name="ThirdButton" IsChecked='False' IsEnabled='True'/>
+        <local:ElevatorButton Height="50" Width="50" Grid.Row="3" x:Name="SecondButton" IsChecked='False' IsEnabled='True' />
+        <local:ElevatorButton Height="50" Width="50" Grid.Row="4" x:Name="FirstButton" IsChecked='False' IsEnabled='True' />
+        <local:ElevatorButton Height="50" Width="50" Grid.Row="5" x:Name="ZeroButton" IsChecked='False' IsEnabled='True' />
     </Grid>
 </UserControl>

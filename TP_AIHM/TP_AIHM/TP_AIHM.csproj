@@ -56,6 +56,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Animation\AnimationControl.cs" />
+    <Compile Include="Elevator\ElevatorAbstract.cs" />
     <Compile Include="Elevator\ElevatorView.xaml.cs">
       <DependentUpon>ElevatorView.xaml</DependentUpon>
     </Compile>
@@ -126,9 +128,7 @@
     </None>
     <AppDesigner Include="Properties\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Animation\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
   </ItemGroup>

@@ -27,10 +27,42 @@ namespace TP_AIHM
 
         private void Initialize()
         {
-            this.ZeroButton.iconPath = "images/Call.png";
-            this.FirstButton.iconPath = "images/Call.png";
-            this.SecondButton.iconPath = "images/Call.png";
-            this.ThirdButton.iconPath = "images/Call.png";
+            this.ThirdButton.EnabledChecked = this.CreateImage("images/CallSelected.png");
+            this.ThirdButton.EnabledUnchecked = this.CreateImage("images/Call.png");
+            this.ThirdButton.DisabledUnchecked = this.CreateImage("images/Call.png");
+
+            this.SecondButton.EnabledChecked = this.CreateImage("images/CallSelected.png");
+            this.SecondButton.EnabledUnchecked = this.CreateImage("images/Call.png");
+            this.SecondButton.DisabledUnchecked = this.CreateImage("images/Call.png");
+
+            this.FirstButton.EnabledChecked = this.CreateImage("images/CallSelected.png");
+            this.FirstButton.EnabledUnchecked = this.CreateImage("images/Call.png");
+            this.FirstButton.DisabledUnchecked = this.CreateImage("images/Call.png");
+
+            this.ZeroButton.EnabledChecked = this.CreateImage("images/CallSelected.png");
+            this.ZeroButton.EnabledUnchecked = this.CreateImage("images/Call.png");
+            this.ZeroButton.DisabledUnchecked = this.CreateImage("images/Call.png");
+        }
+
+        internal void init(ElevatorControl elevatorControl)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal ElevatorButton getButton(string name)
+        {
+            throw new NotImplementedException();
+        }
+
+        private BitmapImage CreateImage(string path)
+        {
+            BitmapImage image = new BitmapImage();
+            image.BeginInit();
+            image.CacheOption = BitmapCacheOption.OnLoad;
+            image.CreateOptions = BitmapCreateOptions.IgnoreImageCache;
+            image.UriSource = new Uri(@"" + path, UriKind.Relative);
+            image.EndInit();
+            return image;
         }
     }
 }
